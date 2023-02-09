@@ -12,7 +12,7 @@ else #otherwise create file and write into it
 echo "Do you want to commit and push now: Y/N"
 read do_commit
 	if [[ $do_commit  == "Y" || $do_commit == "y" ]]
-	then #if yes ask for commit messge, commit and push to github
+	then #if yes ask for commit message, commit and push to github
 		echo "Enter commit message"
 		read c_m
 		git add . && git commit -m "$c_m" && git push
